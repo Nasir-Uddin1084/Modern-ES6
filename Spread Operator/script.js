@@ -24,3 +24,16 @@ console.log(newPerson);
 // add data
 let newPersonAdd = { ...person, dob: '5-02-1998' };
 console.log(newPersonAdd);
+// <<<<<<<<<<<<<<<< Spread Operator on Function >>>>>>>>>>>>>>>>>>>
+
+let numbers = [23, 2, 0, -1, -5];
+// console.log(Math.max(numbers)); // error will show
+console.log(Math.max(...numbers));
+
+//
+let persons = ['Nasir', 'Uddin'];
+let test = (fname, lname) => {
+	console.log(`Hello ${fname} ${lname}`);
+};
+// test(persons[0], persons[1])
+test(...persons);
